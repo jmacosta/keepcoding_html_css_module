@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   font-style: italic;
-  background-color: black;
+  background-color: var(--main-bg-color);
 }
 .footer .footer__company {
   font-style: normal;
@@ -9,4 +9,5 @@
 
 .footer p {
   margin: 0;
+  font-size: 1rem;
 }
