@@ -1,0 +1,19 @@
+.banner {
+  height: 75vh;
+  text-align: center;
+  position: relative;
+}
+.banner .banner__content {
+  position: relative;
+  z-index: 50;
+}
+.banner .banner__image {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../assets/app/catalog.jpg);
+}
