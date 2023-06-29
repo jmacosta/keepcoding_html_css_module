@@ -3,6 +3,9 @@
   background-color: var(--main-bg-color);
   z-index: 999;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 .header__image {
   width: 120px;
@@ -12,6 +15,8 @@
 }
 .header .header__nav .header__nav__list {
   list-style: none;
+  display: flex;
+  gap: 15px;
 }
 .header .header__nav .header__nav__list .header__nav__list__item a {
   text-decoration: none;
