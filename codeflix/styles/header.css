@@ -18,7 +18,14 @@
   list-style: none;
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 .header .header__nav .header__nav__list .header__nav__list__item a {
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .header__image {
+    width: 200px;
+  }
 }
