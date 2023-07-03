@@ -28,3 +28,10 @@
   top: 10%;
   z-index: 40;
 }
+
+/* 768px / 1024px */
+@media (1024px <= width) {
+  .info {
+    flex-direction: row-reverse;
+  }
+}
