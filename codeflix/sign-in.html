@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | Codeflix</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+  </head>
+  <body class="main-bg">
+    <section>
+      <h1>Sign in</h1>
+
+      <form action="/registro" method="post">
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Add your mail"
+            value="dasd@da.es"
+            name="email"
+          />
+        </div>
+        <div class="form-item">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="form-item">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div class="form-item">
+          <label for="avatar"></label>
+          <input type="file" accept="image/png, image/jpeg" id="avatar" />
+        </div>
+        <fieldset>
+          <h4>Fav category</h4>
+          <div class="form-item">
+            <label for="show">Shows</label>
+            <input
+              type="radio"
+              id="show"
+              name="category"
+              value="show"
+              checked
+            />
+            <label for="docu">Docus</label>
+            <input type="radio" id="docu" name="category" value="docu" />
+          </div>
+        </fieldset>
+        <div class="form-item">
+          <label for="bio">Bio</label>
+          <textarea name="bio" id="bio"></textarea>
+        </div>
+
+        <div class="form-item">
+          <input type="checkbox" name="" id="remember_me" />
+          <label for="remember_me">Remember me</label>
+        </div>
+        <div class="form-item">
+          <label for="country">Country</label>
+          <select name="" id="country">
+            <option value="Spain">Spain</option>
+            <option value="france">France</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <button class="btn" type="reset">Reset</button>
+          <input class="btn" type="submit" value="Sign in" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
