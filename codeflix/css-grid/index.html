@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 35vh 40vh 80px;
+        grid-template-areas:
+          "navbar navbar navbar"
+          "header header header"
+          "aside main ."
+          "footer footer footer";
+      }
+      nav {
+        background-color: blue;
+        grid-area: navbar;
+        /*grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;*/
+      }
+      section {
+        background-color: chartreuse;
+        grid-area: header;
+        /*grid-column: 1/4;
+        grid-row: 2/3;*/
+      }
+      aside {
+        background-color: bisque;
+        grid-area: aside;
+        /*grid-column: 1/2;
+        grid-row: 3/4;*/
+      }
+      main {
+        background-color: brown;
+        grid-area: main;
+        /*grid-column: 2/3;
+        grid-row: 3/4;*/
+      }
+      footer {
+        background-color: burlywood;
+        grid-area: footer;
+        /*grid-column: 1/4;
+        grid-row: 4/5;*/
+      }
+    </style>
+  </head>
+  <body>
+    <nav>navBar</nav>
+    <section>Section</section>
+    <aside>aside</aside>
+    <main>main</main>
+    <footer>Footer</footer>
+  </body>
+</html>
